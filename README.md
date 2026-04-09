@@ -1,21 +1,50 @@
 # PlatinumRx Data Analyst Assignment
-Solutions for the PlatinumRx Data Analyst assignment covering SQL, Spreadsheets and Python.
-## Folder Structure
-- SQL/ — Schema setup and query solutions for Hotel and Clinic systems
-- Spreadsheets/ — Excel file with VLOOKUP and ticket time analysis
-- Python/ — Scripts for time conversion and duplicate character removal
-## What Each File Does
-### SQL
-- 1_Hotel_Schema_Setup.sql — creates hotel tables and inserts sample data
-- 2_Hotel_Queries.sql — answers all 5 hotel analysis questions
-- 3_Clinic_Schema_Setup.sql — creates clinic tables and inserts sample data
-- 4_Clinic_Queries.sql — answers all 5 clinic analysis questions
-### Python
-- 01_Time_Converter.py — converts minutes into hours and minutes format
-- 02_Remove_Duplicates.py — removes duplicate characters from a string using a loop
-### Spreadsheets
-- Ticket_Analysis.xlsx — VLOOKUP to pull ticket dates, same-day and same-hour ticket counts by outlet
+
+This repository contains my solutions for the PlatinumRx Data Analyst Assignment. The assignment covers three core skills - SQL, Python and Spreadsheets.
+
+## Task Breakdown
+
+### Phase 1 - SQL
+
+**Hotel Management System**
+- Created tables for users, bookings, items and booking_commercials
+- Wrote queries to find last booked room per user, monthly billing amounts, most and least ordered items, and second highest bill per month
+
+**Clinic Management System**
+- Created tables for clinics, customers, clinic_sales and expenses
+- Wrote queries to find revenue by sales channel, top 10 customers, monthly profit and loss, and most profitable clinics by city and state
+
+### Phase 2 - Spreadsheets
+
+- Created ticket and feedbacks sheets with sample data
+- Used INDEX/MATCH formula to pull ticket created date into feedbacks sheet using cms_id as the common key
+- Added same_day and same_hour helper columns to check if tickets were created and closed on same day and same hour
+- Created outlet wise summary table using COUNTIFS formula
+
+### Phase 3 - Python
+
+**01_Time_Converter.py**
+- Takes total minutes as input
+- Converts it into hours and minutes format
+- Example: 130 minutes becomes 2 hrs 10 minutes
+
+**02_Remove_Duplicates.py**
+- Takes a string as input
+- Removes all duplicate characters using a for loop
+- Example: hello becomes helo
+
 ## Tools Used
-- MySQL for SQL
+
+- MySQL for SQL queries
 - Python 3 for scripting
-- Microsoft Excel for spreadsheet tasks
+- Google Sheets for spreadsheet tasks
+
+## Spreadsheet Link
+
+[Click here to view Ticket Analysis Sheet](https://docs.google.com/spreadsheets/d/1ibYH-u65NB9TxKxuGEBXcOf3XKzp8i5lg2gA7ZfxBSs/edit?usp=sharing)
+
+## Notes
+
+- All SQL queries are written using basic joins and subqueries
+- Python scripts use simple loops and basic operators as required
+- Sample data is included in the schema files for testing purposes
