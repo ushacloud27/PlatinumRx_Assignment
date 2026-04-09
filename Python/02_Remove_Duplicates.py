@@ -1,6 +1,6 @@
-word = input("Enter a string: ")
-result = ""
-for char in word:
-    if char not in result:
-        result = result + char
-print("Unique string: " + result)
+word = input("enter a word: ")
+res = ""
+for c in word:
+    if c not in res:
+        res = res + c
+print("output: " + res)
